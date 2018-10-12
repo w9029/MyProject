@@ -28,7 +28,7 @@ void FileInput()
 
 	p=&STU_head;
 	s=(STU*)malloc(sizeof(STU));
-	while(fscanf(fp,"%s %s %d",s->STU_Number,s->STU_Name,&s->LesCount)!=EOF)
+	while(fscanf(fp,"%s%s%d",s->STU_Number,s->STU_Name,&s->LesCount)!=EOF)
 	{
 		for(i=0; i<s->LesCount; i++)
 		{
@@ -40,7 +40,7 @@ void FileInput()
 		p->next=s;
 		s=(STU*)malloc(sizeof(STU));
 	}
-	s->next=NULL;
+	p->next->next=NULL;
 	fclose(fp);
 
 	//从文件导入课程信息
@@ -57,23 +57,48 @@ void FileInput()
 
 	p2=&LES_head;
 	s2=(LES*)malloc(sizeof(LES));
-	while(fscanf(fp,"%s %s %s %d %d",
+	while(fscanf(fp,"%s%s%s%d%d%d%d",
 	s2->LES_Number,s2->LES_Name,s2->LES_Type,
-	&s2->LES_Time,&s2->MaxStuCount)!=EOF)
+	&s2->LES_Time,&s2->LES_Credit,&s2->StuCount,
+	&s2->MaxStuCount)!=EOF)
 	{
 		PrintLES(s2);
 		p2->next=s2;
 		s2=(LES*)malloc(sizeof(LES));
 	}
-	s2->next=NULL;
+	p2->next->next=NULL;
 	fclose(fp);
 
 }
 
 void KeyboardInput()
 {
+	int i;
+	STU *pstu,*sstu;
+	LES *ples,*sles;
 	
-	
+	//从键盘输入学生信息
+	pstu=&STU_head;
+	sstu=(STU*)malloc(sizeof(STU));
+	printf("请逐行输入学生信息(学号，姓名，课程数，课程名)，以end结尾\n");
+	while(scanf("%s%s%d",sstu->STU_Number,
+		sstu->STU_Name,&sstu->LesCount)!=EOF)
+	{	
+		if(strcmp(sstu->STUNumber,"end")==0)break;
+		for(i=0;i<sstu->LesCount;i++)
+			scanf("%s",sstu->Lessons[i]);
+		sstu->Credit=0;
+		
+		PrintSTU(sstu);
+		pstu->next=sstu;
+		sstu=(STU*)malloc(sizeof(STU));
+	}
+	if(pstu->next!=NULL)
+		pstu->next->next=NULL;
+
+
+
+
 }
 
 int InputInformation()
