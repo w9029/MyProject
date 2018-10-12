@@ -1,6 +1,5 @@
-#include"../Include/STU_struct.h"
-#include"../Include/LES_struct.h"
-#include"../Include/LES_Operate.h"
+#include"STU_struct.h"
+#include"LES_struct.h"
 
 void LES_Interface()
 {

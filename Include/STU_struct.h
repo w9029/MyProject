@@ -4,8 +4,8 @@ typedef struct stu
 {
 	char STU_Number[20];
 	char STU_Name[20];
-	char Lessons[30][10];
 	int LesCount;
+	char Lessons[30][10];
 	int Credit;
 	struct stu *next;
 }STU;
