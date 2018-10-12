@@ -2,7 +2,7 @@
 #define _STU_struct_
 typedef struct stu
 {
-	char STU_Number[20];
+	char STU_Number[20];	//必须是由数字组成的字符串
 	char STU_Name[20];
 	int LesCount;
 	char Lessons[30][10];
