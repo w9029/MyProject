@@ -1,5 +1,8 @@
 #ifndef _STU_struct_
 #define _STU_struct_
+char pathstu[30];
+char pathles[30];
+char logfile[30];
 typedef struct stu
 {
 	char STU_Number[20];	//必须是由数字组成的字符串

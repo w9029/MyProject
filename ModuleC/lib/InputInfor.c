@@ -1,24 +1,29 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include"STU_Operate.h"
-#include"LES_Operate.h"
 #include"STU_struct.h"
 #include"LES_struct.h"
+#include"STU_Operate.h"
+#include"LES_Operate.h"
+#include"PrintInfor.h"
 
 void FileInput();
 void KeyboardInput();
 
 extern STU STU_head;
 extern LES LES_head;
+extern char pathstu[30];
+extern char pathles[30];
+extern char logfile[30];
 
 int InputInformation()
 {
+	strcpy(logfile,"log.log");
 	int flag=1;
 	while(flag!=3)
 	{
 		system("clear");
-		printf("*******学生课程管理系统*******\n");
+		printf("**********系统初始化**********\n");
 		printf("*                            *\n");
 		printf("*      1.从文件导入数据      *\n");
 		printf("*                            *\n");
@@ -67,26 +72,24 @@ void FileInput()
 
 	//从文件导入学生信息
 	STU *p,*s;
-	char path[30];
 	printf("请输入学生信息的文件路径\n");
-	scanf("%s",path);
+	scanf("%s",pathstu);
 
-	while((fp=fopen(path,"r"))==NULL)
+	while((fp=fopen(pathstu,"r"))==NULL)
 	{
 		printf("读取错误，请重新输入路径\n");
-		scanf("%s",path);
+		scanf("%s",pathstu);
 	}
 
 	p=&STU_head;
 	s=(STU*)malloc(sizeof(STU));
-	while(fscanf(fp,"%s%s%d",s->STU_Number,s->STU_Name,&s->LesCount)!=EOF)
+	while(fscanf(fp,"%s%s%d%d",s->STU_Number,
+		s->STU_Name,&s->Credit,&s->LesCount)!=EOF)
 	{
 		for(i=0; i<s->LesCount; i++)
 		{
 			fscanf(fp,"%s",s->Lessons[i]);
 		}
-		fscanf(fp,"%d",&s->Credit);
-
 		p->next=s;
 		p=p->next;
 		s=(STU*)malloc(sizeof(STU));
@@ -98,12 +101,12 @@ void FileInput()
 	LES *p2,*s2;
 
 	printf("请输入课程信息的文件路径\n");
-	scanf("%s",path);
+	scanf("%s",pathles);
 
-	while((fp=fopen(path,"r"))==NULL)
+	while((fp=fopen(pathles,"r"))==NULL)
 	{
 		printf("读取错误，请重新输入路径\n");
-		scanf("%s",path);
+		scanf("%s",pathles);
 	}
 
 	p2=&LES_head;
@@ -127,6 +130,10 @@ void KeyboardInput()
 	int i;
 	STU *pstu,*sstu;
 	LES *ples,*sles;
+
+	//确定数据存放位置
+	strcpy(pathstu,"student.txt");
+	strcpy(pathles,"class.txt");
 
 	//从键盘输入学生信息
 	pstu=&STU_head;

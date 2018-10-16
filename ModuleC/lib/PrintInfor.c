@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include"STU_struct.h"
-#include"LES_struct.h"
+#include"../../Include/STU_struct.h"
+#include"../../Include/LES_struct.h"
 
 extern STU STU_head;
 extern LES LES_head;
@@ -36,6 +36,9 @@ void PrintAllSTU()
 		PrintSTU(p);
 		p=p->next;
 	}
+	printf("\n按任意键继续\n");
+	getchar();
+	getchar();
 }
 
 void PrintAllLES()
@@ -48,5 +51,8 @@ void PrintAllLES()
 		PrintLES(p);
 		p=p->next;
 	}
+	printf("\n按任意键继续\n");
+	getchar();
+	getchar();
 }
 

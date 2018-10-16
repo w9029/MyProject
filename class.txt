@@ -1,0 +1,5 @@
+001	Math	Science	150	2	1	100
+002	English	Art	40	1	3	200
+003	Chinese	Art	1	2	1	120
+004	Music	Art	40	1	2	200
+005	asd	asd	0	0	0	0
