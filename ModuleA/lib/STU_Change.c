@@ -86,6 +86,9 @@ void STU_Change()
 		//增加学分
 		pstu->Credit+=ples->LES_Credit;
 
+		//课程人数增加
+		ples->StuCount++;
+		
 		system("clear");
 		printf("选课成功，此学生当前信息为：\n");
 		printf("学号\t姓名\t学分\t课程数\t课程名\n");
@@ -135,7 +138,7 @@ void STU_Change()
 		printf("请输入日志文件路径\n");
 		scanf("%s",logfile);
 	}
-	fprintf(fp,"Change student\t%s\t(%s)\n\n",pstu->STU_Number,pstu->STU_Name);
+	fprintf(fp,"Change Student\t%s\t(%s)\n\n",pstu->STU_Number,pstu->STU_Name);
 	fclose(fp);
 	
 }

@@ -82,7 +82,7 @@ void STU_Delete()
 			printf("请输入日志文件路径\n");
 			scanf("%s",logfile);
 		}
-		fprintf(fp,"Delete student\t%s\t(%s)\n\n",pstu->STU_Number,pstu->STU_Name);
+		fprintf(fp,"Delete Student\t%s\t(%s)\n\n",pstu->STU_Number,pstu->STU_Name);
 		fclose(fp);
 		free(pstu);
 	}

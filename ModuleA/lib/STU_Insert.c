@@ -67,7 +67,7 @@ void STU_Insert()
 		printf("请输入日志文件路径\n");
 		scanf("%s",logfile);
 	}
-	fprintf(fp,"Insert student\t%s\t(%s)\n\n",s->STU_Number,s->STU_Name);
+	fprintf(fp,"Insert Student\t%s\t(%s)\n\n",s->STU_Number,s->STU_Name);
 	fclose(fp);
 }
 

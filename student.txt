@@ -1,6 +1,10 @@
-0001	Joshua	5	3	English	Math	Chinese
-0002	Bob	3	2	English	Math
-0003	Simith	0	0	
-0004	Lancer	0	0	
-0005	Archer	3	2	Math	Music
-0006	Saber	6	4	Math	Chinese	English	Music
+0001	Joshua	6	3	English	Math1	Chinese
+0002	Bob	3	2	English	PE
+0003	Simith	2	1	PE
+0004	Lancer	1	1	Music
+0005	Archer	4	2	Math1	Music
+0006	Saber	7	4	Math1	Chinese	English	Music
+0007	Caster	5	3	English	Math1	Music
+0008	Rider	2	1	Chinese
+0009	Loki	3	1	Math1
+0010	Zeus	3	1	Math1

@@ -1,48 +1,81 @@
-2018年 10月 16日 星期二 10:30:31 CST
-Delete student	0010	(asd)
+2018年 10月 16日 星期二 21:31:17 CST
+Insert Student	0007	(Berserker)
 
-2018年 10月 16日 星期二 10:30:35 CST
-Delete student	0100	(asd)
+2018年 10月 16日 星期二 21:31:32 CST
+Delete Student	0007	(Berserker)
 
-2018年 10月 16日 星期二 10:30:43 CST
-Insert student	0111	(fghd)
+2018年 10月 16日 星期二 21:31:58 CST
+Insert Student	0007	(Caster)
 
-2018年 10月 16日 星期二 10:31:09 CST
-Change student	0111	(fghd)
+2018年 10月 16日 星期二 21:32:16 CST
+Change Student	0007	(Caster)
 
-2018年 10月 16日 星期二 10:31:16 CST
-Change student	0111	(fghd)
+2018年 10月 16日 星期二 21:32:45 CST
+Insert Student	0008	(Rider)
 
-2018年 10月 16日 星期二 10:31:33 CST
-Insert Class	005	(asd)
+2018年 10月 16日 星期二 21:33:11 CST
+Change Class	005	(asd)
 
-2018年 10月 16日 星期二 10:31:48 CST
-Change Class	006	(as)
+2018年 10月 16日 星期二 21:34:01 CST
+Insert Class	004	(Music)
 
-2018年 10月 16日 星期二 10:32:04 CST
+2018年 10月 16日 星期二 21:34:22 CST
+Insert Class	005	(PE)
+
+2018年 10月 16日 星期二 21:36:17 CST
+Insert Student	0009	(Loki)
+
+2018年 10月 16日 星期二 21:36:59 CST
+Insert Student	0010	(Zeus)
+
+2018年 10月 16日 星期二 21:37:31 CST
+Change Class	003	(Chinese)
+
+2018年 10月 16日 星期二 23:05:04 CST
+Insert student	0100	(David)
+
+2018年 10月 16日 星期二 23:06:31 CST
+Delete student	0100	(David)
+
+2018年 10月 16日 星期二 23:15:20 CST
+Change student	0001	(Joshua)
+
+2018年 10月 16日 星期二 23:15:59 CST
+Change student	0001	(Joshua)
+
+2018年 10月 16日 星期二 23:28:25 CST
+Insert student	0011	(asd)
+
+2018年 10月 16日 星期二 23:28:37 CST
+Delete student	0011	(asd)
+
+2018年 10月 16日 星期二 23:29:11 CST
+Change student	0010	(Zeus)
+
+2018年 10月 16日 星期二 23:35:14 CST
+Change Student	0002	(Bob)
+
+2018年 10月 16日 星期二 23:35:54 CST
+Change Student	0002	(Bob)
+
+2018年 10月 16日 星期二 23:36:11 CST
+Change Student	0003	(Simith)
+
+2018年 10月 16日 星期二 23:36:28 CST
+Change Student	0004	(Lancer)
+
+2018年 10月 16日 星期二 23:44:52 CST
+Insert Class	005	(PE)
+
+2018年 10月 16日 星期二 23:46:50 CST
+Change Class	006	(test)
+
+2018年 10月 16日 星期二 23:51:00 CST
 Change Class	001	(Math1)
 
-2018年 10月 16日 星期二 10:32:11 CST
-Change Class	001	(Math)
+2018年 10月 16日 星期二 23:54:14 CST
+Change Class	001	(Math1)
 
-2018年 10月 16日 星期二 10:32:27 CST
-Change Class	001	(Math)
-
-2018年 10月 16日 星期二 10:32:33 CST
-Change Class	003	(Chinese)
-
-2018年 10月 16日 星期二 10:32:42 CST
-Change Class	003	(Chinese)
-
-2018年 10月 16日 星期二 10:32:49 CST
-Change Class	002	(English)
-
-2018年 10月 16日 星期二 16:18:29 CST
-Delete student	0111	(fghd)
-
-2018年 10月 16日 星期二 16:18:52 CST
-Insert student	asd	(asd)
-
-2018年 10月 16日 星期二 16:18:58 CST
-Delete student	asd	(asd)
+2018年 10月 16日 星期二 23:59:28 CST
+Change Class	001	(Math1)
 
